@@ -15,5 +15,16 @@ namespace Calculator
         public DatabaseService()
         {
         }
+
+        async Task Init()
+        {
+            if (Database is not null)
+                return;
+
+            Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
+            var result = await Database.CreateTableAsync<HistoryModel>();
+        }
+
+
     }
 }
