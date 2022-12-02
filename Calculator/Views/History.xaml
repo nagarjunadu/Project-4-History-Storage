@@ -5,7 +5,7 @@
              Title="History">
     <VerticalStackLayout>
         <Label Text="History Of Calculations"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"> </Label>
-        <Button Text="Clear History" Clicked="Button_ClickedAsync" FontSize="Medium"/>
+        
         <ListView ItemsSource="{Binding history}" VerticalOptions="Center" HorizontalOptions="Center">
             <ListView.ItemTemplate>
                 <DataTemplate>
