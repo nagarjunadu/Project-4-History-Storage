@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.History"
+             Title="History">
+    <VerticalStackLayout>
+        <Label Text="History Of Calculations"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"> </Label>
+        <Button Text="Clear History" Clicked="Button_ClickedAsync" FontSize="Medium"/>
+        <ListView ItemsSource="{Binding history}" VerticalOptions="Center" HorizontalOptions="Center">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding expression}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

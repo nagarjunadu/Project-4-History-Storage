@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Calculator.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Calculator"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.BackgroundColor="{DynamicResource  Secondary}"
+    FlyoutBackgroundColor="{ DynamicResource Black}"
+    Shell.TitleColor="{DynamicResource Black}"
+    Shell.ForegroundColor="{DynamicResource Accent}">
+   
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="AboutPage"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage" />
+
+    <ShellContent
+        Title="ExtendPage"
+        ContentTemplate="{DataTemplate local:ExtendPage}"
+        Route="ExtendPage" />
+
+    <ShellContent
+        Title="Menu"
+        ContentTemplate="{DataTemplate local:Menu}"
+        Route="Menu" />
+
+    <ShellContent
+        Title="Exercise"
+        ContentTemplate="{DataTemplate local:ExamPage}"
+        Route="ExamPage" />
+
+    <ShellContent
+        Title="History"
+        ContentTemplate="{DataTemplate local:History}"
+        Route="History" />
+
+</Shell>
