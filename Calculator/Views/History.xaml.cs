@@ -10,9 +10,6 @@ public partial class History : ContentPage
 		BindingContext = App.historyViewModel;
 	}
 
-	private async void Button_ClickedAsync(object sender, EventArgs e)
-	{
-		await App.historyViewModel.clearHistory();
-	}
+	
 
 }
