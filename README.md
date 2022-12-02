@@ -6,7 +6,7 @@ Sri Haritha Kolli(k683g868) Id:K683G868
 Ravi Teja Vemula(p743s728) Id:Raviteja9-git  
 Nagarjuna Duggempudi(c698c254) Id:nagarjunadu  
 
-APpshell
+Appshell
 ![image](https://user-images.githubusercontent.com/101392957/205358090-5925ead4-37b0-4b66-8782-01847e112428.png)
 
 Home
