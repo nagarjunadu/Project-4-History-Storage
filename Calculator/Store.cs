@@ -10,6 +10,17 @@ namespace Calculator
     {
         private static int pageNumber = 0;
 
-       
+        public static int pageNum
+        {
+            get
+            {
+                return pageNumber;
+            }
+        }
+
+        public static void setPage(int p)
+        {
+            pageNumber = p;
+        }
     }
 }
