@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator.Models
 {
-   
+    public class HistoryModel
+    {
+        public string expression { get; set; }
+    }
 }
